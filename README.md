@@ -4,19 +4,33 @@
 
 ## 內容
 
-9 個客製 skills（不含 Anthropic 預設的 docx / pptx / pdf / xlsx / schedule 等）：
+11 個客製 skills（不含 Anthropic 預設的 docx / pptx / pdf / xlsx / schedule 等）：
+
+### 華文線
 
 | Skill | 用途 |
 |---|---|
 | `drtingtang` | 品牌核心記憶庫 |
 | `9s-course` | 9S 長壽佈局課程資料庫 |
 | `seo-article` | SEO 長文寫作系統 |
-| `emily` | 商務合作 Agent |
+| `yixuan-content-cn` | 華文內容策略師 |
+| `biliang-social-cn` | 華文社群經理 |
+
+### 英文線（v1.4 atomization model，2026-04-21）
+
+| Skill | 用途 |
+|---|---|
+| `duncan-editorial-director-en` | 英文 Editorial Director、Cross-Cultural Literature Strategist、Pillar 長文唯一作者（v2.1） |
+| `phoebe-content-atomization-en` | 英文 Content Atomization Specialist：把 Duncan pillar 切成 15+ 短形式衍生物（v2.1） |
+
+### 共用（雙語）
+
+| Skill | 用途 |
+|---|---|
 | `michelle-marketing-strategist` | 行銷戰略師 |
 | `martin-ads-specialist` | 廣告投手 |
-| `biliang-social-cn` | 華文社群經理 |
-| `yixuan-content-cn` | 華文內容策略師 |
-| `david-brand-guardian` | 品牌守護者 |
+| `david-brand-guardian` | 品牌守護者（雙語品牌一致性） |
+| `emily` | 商務合作 Agent |
 
 ## 筆電第一次 push
 
@@ -47,3 +61,10 @@ git push
 git pull
 bash install.sh    # 重新覆蓋到 ~/.claude/skills/
 ```
+
+## 版本對照
+
+| 版本 | 日期 | 變更 |
+|---|---|---|
+| v1.0 | 2026-04 (init) | 9 skills（華文 + 共用） |
+| v1.4 | 2026-04-30 | 加入英文線：`duncan-editorial-director-en` v2.1 + `phoebe-content-atomization-en` v2.1（依 4/18 onboarding 與 4/21 atomization model 重構） |
